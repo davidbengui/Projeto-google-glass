@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampada Minha</title>
+</head>
+<body>
+    <h1>A Lampada</h1>
+    <img id="lamp" src="../imagens/lampada-apagada.jpg" onmousemove="acesa()" onmouseout="apagada()" onclick="partir()">
+    <script>
+        function acesa(){
+            document.getElementById("lamp").src ="../imagens/lampada-acesa.jpg";
+            
+        }
+        function apagada(){
+            document.getElementById("lamp").src ="../imagens/lampada-apagada.jpg"
+        }
+        function partir(){
+            document.getElementById("lamp").src="../imagens/lampada-quebrada.jpg"
+        }
+    </script>
+</body>
+</html>
